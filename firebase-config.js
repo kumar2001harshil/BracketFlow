@@ -56,6 +56,15 @@ const Auth = {
         }
     },
 
+    async signInAnonymously() {
+        try {
+            await auth.signInAnonymously();
+            return { success: true };
+        } catch (e) {
+            return { success: false, message: this.getErrorMessage(e.code) };
+        }
+    },
+
     async signOut() {
         try {
             await auth.signOut();
