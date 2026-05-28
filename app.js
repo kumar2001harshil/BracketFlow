@@ -851,7 +851,7 @@
         if (user) {
             loggedOut.style.display = 'none';
             loggedIn.style.display = 'block';
-            const displayName = user.isAnonymous ? 'Guest' : (user.displayName || user.email || 'User');
+            const displayName = user.displayName || user.email || 'User';
             document.getElementById('userName').textContent = displayName;
             const initials = displayName.charAt(0).toUpperCase();
             document.getElementById('userAvatarPlaceholder').textContent = initials;
@@ -989,17 +989,6 @@
             document.getElementById('authError').textContent = result.message;
         }
     });
-
-    // Anonymous (guest) sign-in
-    const anonBtn = document.getElementById('anonSignInBtn');
-    if (anonBtn) {
-        anonBtn.addEventListener('click', async () => {
-            const result = await Auth.signInAnonymously();
-            if (!result.success) {
-                document.getElementById('authError').textContent = result.message;
-            }
-        });
-    }
 
     // Sign out
     document.getElementById('signOutBtn').addEventListener('click', () => {
