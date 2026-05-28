@@ -4,12 +4,12 @@
  */
 
 const firebaseConfig = {
-    apiKey: "__AIzaSyBUs0vOViFd28b-V2zVlVKmnx0S1XJmQ2s__",
-    authDomain: "__bracketflow-58321.firebaseapp.com__",
-    projectId: "__bracketflow-58321__",
-    storageBucket: "__bracketflow-58321.firebasestorage.app__",
-    messagingSenderId: "__1071104966834__",
-    appId: "__1:1071104966834:web:40a1d0a4a864a8073fc9ab__"
+    apiKey: "AIzaSyBUs0vOViFd28b-V2zVlVKmnx0S1XJmQ2s",
+    authDomain: "bracketflow-58321.firebaseapp.com",
+    projectId: "bracketflow-58321",
+    storageBucket: "bracketflow-58321.firebasestorage.app",
+    messagingSenderId: "1071104966834",
+    appId: "1:1071104966834:web:40a1d0a4a864a8073fc9ab"
 };
 
 // Initialize Firebase
